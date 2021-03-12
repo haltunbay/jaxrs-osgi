@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" name="org.example.rest2.GreeterTR">
+   <service>
+      <provide interface="org.example.rest.api.IGreeter"/>
+   </service>
+   <implementation class="org.example.rest2.GreeterTR"/>
+</scr:component>

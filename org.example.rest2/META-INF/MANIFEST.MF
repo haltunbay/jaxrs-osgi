@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Rest2
+Bundle-SymbolicName: org.example.rest2
+Bundle-Version: 1.0.0
+Automatic-Module-Name: org.example.rest2
+Bundle-RequiredExecutionEnvironment: JavaSE-13
+Import-Package: javax.ws.rs,
+ org.example.rest.api,
+ org.osgi.service.component.annotations;version="1.3.0";resolution:=optional
+Service-Component: OSGI-INF/org.example.rest2.GreeterTR.xml,
+ OSGI-INF/org.example.rest2.GreeterEn.xml
+Bundle-ActivationPolicy: lazy

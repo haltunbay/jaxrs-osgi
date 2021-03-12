@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Consumer2
+Bundle-SymbolicName: org.example.consumer2
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: org.example.consumer1
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.eclipsesource.jaxrs.consumer;bundle-version="5.3.1",
+ com.eclipsesource.jaxrs.jersey-all;bundle-version="2.16.0",
+ com.google.gson;bundle-version="2.8.2"
+Import-Package: javax.ws.rs,
+ org.osgi.service.component.annotations;version="1.3.0";resolution:=optional
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/org.example.consumer2.Main.xml

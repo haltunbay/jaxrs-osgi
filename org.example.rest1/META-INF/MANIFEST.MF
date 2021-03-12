@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Rest1
+Bundle-SymbolicName: org.example.rest1
+Bundle-Version: 1.0.0
+Bundle-Activator: org.example.rest1.Activator
+Require-Bundle: org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-13
+Automatic-Module-Name: org.example.rest1
+Bundle-ActivationPolicy: lazy
+Import-Package: javax.ws.rs

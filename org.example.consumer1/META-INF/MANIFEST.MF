@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Consumer1
+Bundle-SymbolicName: org.example.consumer1
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: org.example.consumer1
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.eclipsesource.jaxrs.consumer;bundle-version="5.3.1",
+ com.eclipsesource.jaxrs.jersey-all;bundle-version="2.22.2",
+ org.example.rest.api
+Import-Package: javax.ws.rs,
+ org.osgi.service.component.annotations;version="1.3.0";resolution:=optional
+Service-Component: OSGI-INF/org.example.consumer1.RestConsumer.xml
+Bundle-ActivationPolicy: lazy
